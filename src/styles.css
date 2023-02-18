@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+body {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: red;
+}
+.result {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.summary {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 10px 20px 10px;
+}
+.small-card {
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-between;
+  display: flex;
+  padding: 8px;
+  background-color: gray;
+  margin-bottom: 5px;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  color: white;
+}
+
+#Reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: rgba(255, 87, 87, 0.3);
+}
+#Memory {
+  color: hsl(39, 100%, 56%);
+  background-color: rgb(255, 176, 31, 0.3);
+}
+#Verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: rgba(0, 189, 145, 0.3);
+}
+#Visual {
+  color: hsl(234, 85%, 45%);
+  background-color: rgba(17, 37, 212, 0.3);
+}
+.text {
+  color: hsl(224, 30%, 27%);
+  font-size: 14px;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+.circle p {
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+}
+button {
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+button:hover {
+  background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+img {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+.small-card p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.score {
+  font-weight: bold;
+}
+.summary .head {
+  color: black;
+}
+.head {
+  font-size: 18px;
+  font-weight: 700;
+}
+.result .head {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.min-card {
+  display: flex;
+  align-items: center;
+}
+.des {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.last-result {
+  font-size: 20px;
+  padding: 0 30px 0px 30px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    gap: 5px;
+    width: auto;
+    margin: 40px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* ### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%) */
